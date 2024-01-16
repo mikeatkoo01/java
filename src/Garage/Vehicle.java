@@ -13,7 +13,6 @@ public class Vehicle {
 	}
 
 	public Vehicle(String make, String engine, String fuel) {
-
 		this.make = make;
 		this.engine = engine;
 		this.fuel = fuel;
