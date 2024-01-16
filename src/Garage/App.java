@@ -3,8 +3,19 @@ package Garage;
 public class App {
 
 	public static void main(String[] args) {
-		Vehicle Ford = new Car();
-		Vehicle plane1 = new Plane();
+		Car focus = new Car();
+		focus.setMake("focusRS");
+		focus.setEngine("2litre");
+		focus.setFuel("petrol");
+		focus.setSunroof(true);
+
+		Plane rolls = new Plane();
+		rolls.setMake("rolls royce");
+		rolls.setEngine("twin Turbo");
+		rolls.setFuel("kerosene");
+
+		focus.print();
+		rolls.print();
 
 	}
 

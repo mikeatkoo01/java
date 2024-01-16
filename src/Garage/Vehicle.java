@@ -13,9 +13,17 @@ public class Vehicle {
 	}
 
 	public Vehicle(String make, String engine, String fuel) {
+		super();
 		this.make = make;
 		this.engine = engine;
 		this.fuel = fuel;
+
+	}
+
+	public void print() {
+		System.out.println("make: " + this.make);
+		System.out.println("engine: " + this.engine);
+		System.out.println("fuel: " + this.fuel);
 
 	}
 

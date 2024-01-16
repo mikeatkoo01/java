@@ -16,7 +16,7 @@ public class App {
 		Mike.setOccupation("Mortgage Admin");
 
 		People[] peoples = { James, Mike, Alfie };
-// this allows set methods to be passed through as the loop happens//
+// this allows set methods to be passed through as the loop happens///
 		for (People person : peoples) {
 			person.Intro();
 			person.Info();
