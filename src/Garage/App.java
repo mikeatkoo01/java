@@ -13,9 +13,12 @@ public class App {
 		rolls.setMake("rolls royce");
 		rolls.setEngine("twin Turbo");
 		rolls.setFuel("kerosene");
+		rolls.setpropella(true);
 
 		focus.print();
 		rolls.print();
+		focus.sun();
+		rolls.prop();
 
 	}
 
