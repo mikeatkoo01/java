@@ -13,4 +13,8 @@ public class Plane extends Vehicle {
 		return propella;
 	}
 
+	public void prop() {
+		System.out.println(prop);
+	}
+
 }

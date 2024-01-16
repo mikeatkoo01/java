@@ -12,4 +12,8 @@ public class Car extends Vehicle {
 	public boolean getsunroof() {
 		return sunroof;
 	}
+
+	public void sun() {
+		System.out.println(sunroof);
+	}
 }
