@@ -1,6 +1,6 @@
 package objectsexample;
 
-public class Cat {
+public class Cat extends Pet {
 
 	String name;
 
