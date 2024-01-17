@@ -15,10 +15,18 @@ public class App {
 		rolls.setFuel("kerosene");
 		rolls.setpropella(true);
 
+		Bike ninja = new Bike();
+		ninja.setMake("kwninja");
+		ninja.setEngine("1litre");
+		ninja.setFuel("petrol");
+		ninja.setsidecar(false);
+
 		focus.print();
-		rolls.print();
 		focus.sun();
+		rolls.print();
 		rolls.prop();
+		ninja.print();
+		ninja.side();
 
 	}
 

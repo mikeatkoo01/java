@@ -25,7 +25,7 @@ public class People {
 
 	}
 
-// method to apss the data and pront it can be use in the loop//
+// method to apss the data and print it can be use in the loop//
 	public void Info() {
 		System.out.println(name);
 		System.out.println(age);

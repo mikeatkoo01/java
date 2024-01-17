@@ -13,4 +13,7 @@ public class Bike extends Vehicle {
 		return sidecar;
 	}
 
+	public void side() {
+		System.out.println(sidecar);
+	}
 }
