@@ -24,11 +24,17 @@ public class Car extends Vehicle {
 		return sunroof;
 	}
 
-	public void sun() {
-		System.out.println("sunroof :" + sunroof);
+	@Override
+	public void print() {
+		super.print();
+		System.out.println("sunroof:" + this.sunroof);
 	}
-
-	public void printcar() {
-		System.out.println();
-	}
+// this was before override
+//	public void sun() {
+//		System.out.println("sunroof :" + sunroof);
+//	}
+//
+//	public void printcar() {
+//		System.out.println();
+//	}
 }

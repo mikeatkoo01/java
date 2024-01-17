@@ -18,6 +18,12 @@ public class Plane extends Vehicle {
 		System.out.println(propella);
 	}
 
+	@Override
+	public void print() {
+		super.print();
+		System.out.println("propella:" + this.propella);
+	}
+
 	public Plane() {
 		super();
 		// TODO Auto-generated constructor stub

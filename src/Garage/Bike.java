@@ -24,10 +24,17 @@ public class Bike extends Vehicle {
 		// TODO Auto-generated constructor stub
 	}
 
+	@Override
+	public void print() {
+		super.print();
+		System.out.println("sidecar:" + this.sidecar);
+	}
+
 	public Bike(String make, String engine, String fuel, boolean sidecar) {
 		super(make, engine, fuel);
 		this.sidecar = sidecar;
 		// TODO Auto-generated constructor stub
+
 	}
 
 //	if (sidecar = false) {

@@ -23,19 +23,22 @@ public class App {
 
 		Car rangerover = new Car("svr", "3litre", "petrol", true);
 		Plane A300 = new Plane("a300", "bentley", "kerosene", false);
-
-		focus.print();
-		focus.sun();
-		rolls.print();
-		rolls.prop();
-		ninja.print();
-		ninja.side();
+		Bike honda = new Bike("honda", "2 litre", "diesel", true);
 
 		rangerover.print();
-		rangerover.sun();
-		A300.print();
-		A300.prop();
 
+		Vehicle v1 = new Car("svr", "3litre", "petrol", true);
+		Vehicle v2 = new Bike("honda", "2 litre", "diesel", true);
+		Vehicle v3 = new Plane("a300", "bentley", "kerosene", false);
+		Vehicle v4 = new Car("FocusRS", "3.2litre", "petrol", true);
+		Vehicle v5 = new Bike("Kw Ninja", "1 litre", "diesel", true);
+		Vehicle v6 = new Plane("747", "jt turbo fan", "kerosene", false);
+
+		Vehicle[] vehicles = { v1, v2, v3, v4, v5, v6 };
+
+		for (Vehicle ver : vehicles) {
+			ver.print();
+		}
 	}
 
 }
