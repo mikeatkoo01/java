@@ -28,6 +28,7 @@ public class Vehicle {
 	}
 
 	public Vehicle() {
+		super();
 	}
 
 	public void setMake(String make) {

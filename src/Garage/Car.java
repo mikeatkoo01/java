@@ -9,11 +9,25 @@ public class Car extends Vehicle {
 
 	}
 
+	public Car() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+
+	public Car(String make, String engine, String fuel, boolean sunroof) {
+		super(make, engine, fuel);
+		// TODO Auto-generated constructor stub
+	}
+
 	public boolean getsunroof() {
 		return sunroof;
 	}
 
 	public void sun() {
-		System.out.println(sunroof);
+		System.out.println("sunroof :" + sunroof);
+	}
+
+	public void printcar() {
+		System.out.println();
 	}
 }

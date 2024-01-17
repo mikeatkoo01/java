@@ -21,12 +21,20 @@ public class App {
 		ninja.setFuel("petrol");
 		ninja.setsidecar(false);
 
+		Car rangerover = new Car("svr", "3litre", "petrol", true);
+		Plane A300 = new Plane("a300", "bentley", "kerosene", false);
+
 		focus.print();
 		focus.sun();
 		rolls.print();
 		rolls.prop();
 		ninja.print();
 		ninja.side();
+
+		rangerover.print();
+		rangerover.sun();
+		A300.print();
+		A300.prop();
 
 	}
 
