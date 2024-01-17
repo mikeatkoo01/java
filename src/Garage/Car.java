@@ -16,6 +16,7 @@ public class Car extends Vehicle {
 
 	public Car(String make, String engine, String fuel, boolean sunroof) {
 		super(make, engine, fuel);
+		this.sunroof = sunroof;
 		// TODO Auto-generated constructor stub
 	}
 

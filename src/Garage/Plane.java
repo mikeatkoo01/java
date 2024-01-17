@@ -25,6 +25,7 @@ public class Plane extends Vehicle {
 
 	public Plane(String make, String engine, String fuel, boolean propella) {
 		super(make, engine, fuel);
+		this.propella = propella;
 		// TODO Auto-generated constructor stub
 	}
 
