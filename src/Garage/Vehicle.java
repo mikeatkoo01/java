@@ -1,5 +1,7 @@
 package Garage;
 
+import java.util.Objects;
+
 public class Vehicle {
 
 	private String make;
@@ -20,12 +22,12 @@ public class Vehicle {
 
 	}
 
-	public void print() {
-		System.out.println("make: " + this.make);
-		System.out.println("engine: " + this.engine);
-		System.out.println("fuel: " + this.fuel);
-
-	}
+//	public void print() {
+//		System.out.println("make: " + this.make);
+//		System.out.println("engine: " + this.engine);
+//		System.out.println("fuel: " + this.fuel);
+//
+//	}
 
 	public Vehicle() {
 		super();
@@ -34,6 +36,29 @@ public class Vehicle {
 	public void setMake(String make) {
 		this.make = make;
 
+	}
+
+	@Override
+	public String toString() {
+		return "Vehicle [make=" + make + ", engine=" + engine + ", fuel=" + fuel + "]";
+	}
+
+	@Override
+	public int hashCode() {
+		return Objects.hash(engine, fuel, make);
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj) {
+			return true;
+		}
+		if (!(obj instanceof Vehicle)) {
+			return false;
+		}
+		Vehicle other = (Vehicle) obj;
+		return Objects.equals(engine, other.engine) && Objects.equals(fuel, other.fuel)
+				&& Objects.equals(make, other.make);
 	}
 
 	public String getMake() {

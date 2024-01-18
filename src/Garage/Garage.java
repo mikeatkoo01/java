@@ -25,14 +25,14 @@ public class Garage {
 		vehicle.remove(ver);
 	}
 
-	public void print() {
-		System.out.println("lux cars Ltd");
-		for (Vehicle ver : vehicle) {
-			ver.print();
+//	public void print() {
+//		System.out.println("lux cars Ltd");
+//		for (Vehicle ver : vehicle) {
+//			ver.print();
 
-		}
+//		}
 
-	}
+//	}
 
 	public String getName() {
 		return name;
@@ -40,6 +40,11 @@ public class Garage {
 
 	public void setName(String name) {
 		this.name = name;
+	}
+
+	@Override
+	public String toString() {
+		return "Garage [name=" + name + ", vehicle=" + vehicle + "]";
 	}
 
 }

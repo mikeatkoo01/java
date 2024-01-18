@@ -45,7 +45,21 @@ public class App {
 		myGarage.admit(new Car("Lambo", "6.8litre", "petrol", true));
 		myGarage.admit(new Car("Porsche", "3litre", "petrol", true));
 
-		myGarage.print();
+		myGarage.admit(new Car("focusRS", "3.2litre", "petrol", true));
+
+//		myGarage.print(); this is due to.string replacing print. 
+
+		Vehicle Car1 = new Car("focusRS", "3.2litre", "petrol", true);
+		Vehicle Car2 = new Car("focusRS", "3.2litre", "petrol", true);
+
+//syntax (x.equals(y) this is to compare values.
+
+//		System.out.println(Car1.equals(Car2));
+
+		System.out.println(Car2);
+		System.out.println(Car2);
+
+		System.out.println(myGarage);
 
 	}
 

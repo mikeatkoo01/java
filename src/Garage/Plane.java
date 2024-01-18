@@ -18,11 +18,11 @@ public class Plane extends Vehicle {
 		System.out.println(propella);
 	}
 
-	@Override
-	public void print() {
-		super.print();
-		System.out.println("propella:" + this.propella);
-	}
+//	@Override
+//	public void print() {
+//		super.print();
+//		System.out.println("propella:" + this.propella);
+//	}
 
 	public Plane() {
 		super();
@@ -33,6 +33,37 @@ public class Plane extends Vehicle {
 		super(make, engine, fuel);
 		this.propella = propella;
 		// TODO Auto-generated constructor stub
+	}
+
+	@Override
+	public String toString() {
+		return "Plane [propella=" + propella + ", getpropella()=" + getpropella() + ", getMake()=" + getMake()
+				+ ", getEngine()=" + getEngine() + ", getfuel()=" + getfuel() + "]";
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj) {
+			return true;
+		}
+		if (obj == null) {
+			return false;
+		}
+		if (getClass() != obj.getClass()) {
+			return false;
+		}
+		// Casts the other obj to be a Cat
+		Plane other = (Plane) obj;
+
+		if (!super.equals(obj)) {
+			return false;
+		}
+
+		if (this.propella != other.getpropella()) {
+			return false;
+		}
+
+		return true;
 	}
 
 }

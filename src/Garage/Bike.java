@@ -24,10 +24,16 @@ public class Bike extends Vehicle {
 		// TODO Auto-generated constructor stub
 	}
 
+//	@Override
+//	public void print() {
+//		super.print();
+//		System.out.println("sidecar:" + this.sidecar);
+//	}
+
 	@Override
-	public void print() {
-		super.print();
-		System.out.println("sidecar:" + this.sidecar);
+	public String toString() {
+		return "Bike [sidecar=" + sidecar + ", getsidecar()=" + getsidecar() + ", getMake()=" + getMake()
+				+ ", getEngine()=" + getEngine() + ", getfuel()=" + getfuel() + "]";
 	}
 
 	public Bike(String make, String engine, String fuel, boolean sidecar) {
@@ -35,6 +41,31 @@ public class Bike extends Vehicle {
 		this.sidecar = sidecar;
 		// TODO Auto-generated constructor stub
 
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj) {
+			return true;
+		}
+		if (obj == null) {
+			return false;
+		}
+		if (getClass() != obj.getClass()) {
+			return false;
+		}
+		// Casts the other obj to be a Cat
+		Bike other = (Bike) obj;
+
+		if (!super.equals(obj)) {
+			return false;
+		}
+
+		if (this.sidecar != other.getsidecar()) {
+			return false;
+		}
+
+		return true;
 	}
 
 //	if (sidecar = false) {
