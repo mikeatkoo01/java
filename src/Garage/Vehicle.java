@@ -2,7 +2,7 @@ package Garage;
 
 import java.util.Objects;
 
-public class Vehicle {
+public abstract class Vehicle {
 
 	private String make;
 
@@ -28,6 +28,8 @@ public class Vehicle {
 //		System.out.println("fuel: " + this.fuel);
 //
 //	}
+
+	public abstract int calcBill();
 
 	public Vehicle() {
 		super();

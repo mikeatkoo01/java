@@ -31,6 +31,11 @@ public class Car extends Vehicle {
 //	}
 
 	@Override
+	public int calcBill() {
+		return 15;
+	}
+
+	@Override
 	public boolean equals(Object obj) {
 		if (this == obj) {
 			return true;

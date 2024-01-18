@@ -24,6 +24,11 @@ public class Plane extends Vehicle {
 //		System.out.println("propella:" + this.propella);
 //	}
 
+	@Override
+	public int calcBill() {
+		return 12;
+	}
+
 	public Plane() {
 		super();
 		// TODO Auto-generated constructor stub

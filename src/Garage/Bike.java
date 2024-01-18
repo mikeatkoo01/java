@@ -31,6 +31,11 @@ public class Bike extends Vehicle {
 //	}
 
 	@Override
+	public int calcBill() {
+		return 10;
+	}
+
+	@Override
 	public String toString() {
 		return "Bike [sidecar()=" + getsidecar() + ", Make()=" + getMake() + ", Engine=" + getEngine() + ", fuel="
 				+ getfuel() + "]";
