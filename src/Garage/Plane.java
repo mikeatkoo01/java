@@ -42,8 +42,8 @@ public class Plane extends Vehicle {
 
 	@Override
 	public String toString() {
-		return "Plane [propella()=" + getpropella() + ", Make()=" + getMake() + ", Engine()=" + getEngine()
-				+ ", fuel()=" + getfuel() + "]";
+		return "Plane Id=" + getId() + ", Make=" + getMake() + ", Engine=" + getEngine() + ", fuel=" + getfuel()
+				+ "propella=" + propella;
 	}
 
 	@Override

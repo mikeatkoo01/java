@@ -2,7 +2,9 @@ package Garage;
 
 import java.util.Objects;
 
-public abstract class Vehicle {
+public abstract class Vehicle implements Comparable<Vehicle> {
+
+	private int id;
 
 	private String make;
 
@@ -10,12 +12,15 @@ public abstract class Vehicle {
 
 	private String fuel;
 
+	private static int count;
+
 	public void Print() {
 		System.out.println(make);
 	}
 
 	public Vehicle(String make, String engine, String fuel) {
 		super();
+		this.id = ++count;
 		this.make = make;
 		this.engine = engine;
 		this.fuel = fuel;
@@ -29,10 +34,17 @@ public abstract class Vehicle {
 //
 //	}
 
+	@Override
+	public int compareTo(Vehicle o) {
+		// TODO Auto-generated method stub
+		return this.make.compareTo(o.make);
+	}
+
 	public abstract int calcBill();
 
 	public Vehicle() {
 		super();
+		this.id = ++count;
 	}
 
 	public void setMake(String make) {
@@ -40,9 +52,23 @@ public abstract class Vehicle {
 
 	}
 
+	/**
+	 * @return the id
+	 */
+	public int getId() {
+		return id;
+	}
+
+	/**
+	 * @param id the id to set
+	 */
+	public void setId(int id) {
+		this.id = id;
+	}
+
 	@Override
 	public String toString() {
-		return "Vehicle [make=" + make + ", engine=" + engine + ", fuel=" + fuel + "]";
+		return "Vehicle id=" + id + ", make=" + make + ", engine=" + engine + ", fuel=" + fuel;
 	}
 
 	@Override

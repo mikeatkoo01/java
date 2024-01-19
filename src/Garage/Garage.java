@@ -29,6 +29,10 @@ public class Garage {
 
 	}
 
+	public Vehicle remove(int index) {
+		return this.vehicle.remove(index);
+	}
+
 	/**
 	 * @return the vehicle
 	 */

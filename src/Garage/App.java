@@ -1,5 +1,8 @@
 package Garage;
 
+import java.util.ArrayList;
+import java.util.Collections;
+
 public class App {
 
 	public static void main(String[] args) {
@@ -38,45 +41,50 @@ public class App {
 //			ver.print();
 //		}
 
-		Garage myGarage = new Garage("lux cars ltd");
-
-		myGarage.admit(new Car("svr", "3litre", "petrol", true));
-		myGarage.admit(new Car("focusRS", "3.2litre", "petrol", true));
-		myGarage.admit(new Car("Lambo", "6.8litre", "petrol", true));
-		myGarage.admit(new Car("Porsche", "3litre", "petrol", true));
-
-		myGarage.admit(new Car("focusRS", "3.2litre", "petrol", true));
+//		Garage myGarage = new Garage("lux cars ltd");
+//
+//		myGarage.admit(new Car("svr", "3litre", "petrol", true));
+//		myGarage.admit(new Car("focusRS", "3.2litre", "petrol", true));
+//		myGarage.admit(new Car("Lambo", "6.8litre", "petrol", true));
+//		myGarage.admit(new Car("Porsche", "3litre", "petrol", true));
+//
+//		myGarage.admit(new Car("focusRS", "3.2litre", "petrol", true));
 
 //		myGarage.print(); this is due to.string replacing print. 
 
-		Vehicle Car1 = new Car("focusRS", "3.2litre", "petrol", true);
-		Vehicle Car2 = new Car("focusRS", "3.2litre", "petrol", true);
+//		Vehicle Car1 = new Car("focusRS", "3.2litre", "petrol", true);
+//		Vehicle Car2 = new Car("focusRS", "3.2litre", "petrol", true);
 
 //syntax (x.equals(y) this is to compare values.
 
 //		System.out.println(Car1.equals(Car2));
 
-		System.out.println(Car1);
-		System.out.println(Car2);
+//		System.out.println(Car1);
+//		System.out.println(Car2);
 
 //		System.out.println(myGarage);
 
-		System.out.println(myGarage.total());
-		/*
-		 * Copyright 2024 the original author or authors.
-		 *
-		 * Licensed under the Apache License, Version 2.0 (the "License"); you may not
-		 * use this file except in compliance with the License. You may obtain a copy of
-		 * the License at
-		 *
-		 * https://www.apache.org/licenses/LICENSE-2.0
-		 *
-		 * Unless required by applicable law or agreed to in writing, software
-		 * distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
-		 * WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
-		 * License for the specific language governing permissions and limitations under
-		 * the License.
-		 */
+//		System.out.println(myGarage.total());
+
+		ArrayList<Vehicle> vehicles = new ArrayList<>();
+
+		Vehicle v1 = new Car("svr", "3litre", "petrol", true);
+		Vehicle v2 = new Car("focusRS", "3.2litre", "petrol", true);
+		Vehicle v3 = new Car("Lambo", "6.8litre", "petrol", true);
+		Vehicle v4 = new Plane("Boeing", "747", "White", false);
+		Vehicle v5 = new Plane("Rolls Royce", "Spitfire", "Green", true);
+
+		vehicles.add(v3);
+		vehicles.add(v4);
+		vehicles.add(v1);
+		vehicles.add(v5);
+		vehicles.add(v2);
+
+		System.out.println("VEHICLES: " + vehicles);
+
+		Collections.sort(vehicles);
+
+		System.out.println("VEHICLES: " + vehicles);
 
 	}
 

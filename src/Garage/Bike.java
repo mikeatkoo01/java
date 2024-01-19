@@ -37,8 +37,8 @@ public class Bike extends Vehicle {
 
 	@Override
 	public String toString() {
-		return "Bike [sidecar()=" + getsidecar() + ", Make()=" + getMake() + ", Engine=" + getEngine() + ", fuel="
-				+ getfuel() + "]";
+		return "Bike Id=" + getId() + ", Make=" + getMake() + ", Engine=" + getEngine() + ", fuel=" + getfuel()
+				+ "sidecar=" + sidecar;
 	}
 
 	public Bike(String make, String engine, String fuel, boolean sidecar) {

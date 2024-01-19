@@ -62,8 +62,8 @@ public class Car extends Vehicle {
 
 	@Override
 	public String toString() {
-		return "Car [ Make=" + getMake() + ", Engine=" + getEngine() + ", fuel=" + getfuel() + ",sunroof="
-				+ getsunroof() + "]";
+		return "Car Id=" + getId() + ", Make=" + getMake() + ", Engine=" + getEngine() + ", fuel=" + getfuel()
+				+ "sunroof=" + sunroof;
 	}
 
 // this was before override
