@@ -56,10 +56,10 @@ public class App {
 
 //		System.out.println(Car1.equals(Car2));
 
-		System.out.println(Car2);
+		System.out.println(Car1);
 		System.out.println(Car2);
 
-		System.out.println(myGarage);
+//		System.out.println(myGarage);
 
 		System.out.println(myGarage.total());
 		/*
